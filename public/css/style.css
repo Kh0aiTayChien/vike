@@ -1,12 +1,17 @@
 @font-face {
     font-family: 'Anton-Regular';
     src: url('../fonts/Anton-Regular.ttf');
-
 }
 @font-face {
     font-intel: 'Inter-VariableFont_slnt,wght'
     url('../fonts/Inter-VariableFont_slnt,wght.ttf');
 }
+
+@font-face {
+    font-pilot: 'pilotcommand'
+    url('../fonts/pilotcommand.ttf');
+}
+
 .block1_mob {
     background-image: url('/images/Group 41.png');
     padding-bottom: 3%;
@@ -16,7 +21,8 @@
 }
 
 .logo2_mob {
-    width: 60%;
+    width: 280%;
+    padding-left: 10%;
 }
 
 .item {
@@ -42,17 +48,30 @@ li {
 
 .anh_to_mob{
     position: relative;
-    padding-top: 5%;
+    padding-top: 3%;
     text-align: center;
 }
 
+.chunen_vang {
+    color: gold;
+    font-family: 'pilotcommand';
+    font-weight: 1000;
+    line-height: 130%;
+}
+
+.chunen_trang {
+    color: white;
+    font-family: 'pilotcommand';
+    font-weight: 1000;
+    line-height: 130%;
+}
 
 .text_content {
     position: relative;
     color: white;
     justify-content: center;
     display: flex;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .themlink {
@@ -87,7 +106,8 @@ li {
 }
 
 .anh_nho_mob {
-    padding-bottom: 1%;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 .col-1 {width: 8.33%;}
@@ -124,6 +144,15 @@ li {
 
 .logo2 {
     width: 200%;
+}
+
+.home_mob {
+    width: 120%;
+}
+
+.menu2_mob {
+    width: 200%;
+    padding-right: 3%;
 }
 
 .home {
@@ -265,8 +294,22 @@ li {
     border: none;
 }
 
+.logo1_mob {
+    width: 100%;
+    margin-left: -30%;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 10px;
+    width: 8%;
+    background: grey;
+}
+
 .logo1 {
-    width: 80%;
+    width: 95%;
 }
 
 .menu {
