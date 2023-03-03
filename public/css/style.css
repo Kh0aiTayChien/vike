@@ -615,7 +615,7 @@ li {
         background-color: transparent !important;
     }
     .slick-slide {
-        height: 35rem !important;
+        height:30rem !important;
         padding:0;
         text-align:center;
         margin-right:0;
@@ -623,7 +623,7 @@ li {
     }
     .card {
         width: 90% !important;
-        height:100%;
+        height:30rem;
         background-color: #1D1D1D !important;
         border-top: none !important; /* viền trên màu vàng của thẻ card */
         border-bottom: none !important;
