@@ -46,27 +46,6 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-{{--    <script>--}}
-{{--        // Get the button--}}
-{{--        let mybutton = document.getElementById("myBtn");--}}
-
-{{--        // When the user scrolls down 20px from the top of the document, show the button--}}
-{{--        window.onscroll = function() {scrollFunction()};--}}
-
-{{--        // function scrollFunction() {--}}
-{{--        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {--}}
-{{--        //         mybutton.style.display = "block";--}}
-{{--        //     } else {--}}
-{{--        //         mybutton.style.display = "none";--}}
-{{--        //     }--}}
-{{--        // }--}}
-
-{{--        // When the user clicks on the button, scroll to the top of the document--}}
-{{--        function topFunction() {--}}
-{{--            document.body.scrollTop = 0;--}}
-{{--            document.documentElement.scrollTop = 0;--}}
-{{--        }--}}
-{{--    </script>--}}
     <ul class="header clearfix navbar">
         <div class="column menu">
             <li class="animate__animated animate__backInLeft"><button class="mybtn logo1" onclick="topFunction()" id="myBtn" title="Go to top"><img class="logo1_mob" src="{{ asset('images/logo.png') }}"></button></li>
@@ -77,6 +56,7 @@
             <li class="menu3_mob"><a href="#logo1"><img class="logo2_mob" src="{{asset('images/logo1.png') }}"></a></li>
         </div>
     </ul>
+
     <div class="anh_to_mob">
         <h1 class="chunen_trang">PLATFORM FOR</h1>
         <h1 class="chunen_vang">WORLDWIDE</h1>
