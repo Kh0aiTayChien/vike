@@ -18,7 +18,7 @@
                     <h5 class="card-title" style="">{{ $article->title}}</h5>
                     <p class="card-text text-white mt-5 "
                        style="">{!! Str::limit(strip_tags($article->content)) !!}</p>
-                    <button class="button-more">more</button>
+                    <a href="{{ route('article',['slug' => $article->slug]) }}" class="button-more">more</a>
                 </div>
             </div>
         @endforeach
