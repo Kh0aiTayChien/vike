@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{{--    <link rel="stylesheet" href="{{ asset('css/style.css') }}">--}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
             rel="stylesheet"
@@ -42,5 +42,14 @@
 @include('layout.footer')
 
 </body>
-
+<script>
+    window.addEventListener('load', function() {
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '{{ asset('css/style.css') }}' + '?v=' + Math.random();
+        link.type = 'text/css';
+        head.appendChild(link);
+    });
+</script>
 </html>
