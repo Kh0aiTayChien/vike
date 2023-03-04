@@ -1,4 +1,4 @@
-<div class="block1_mob justify-content-center">
+<div class="block1_mob justify-content-center" style="background-image: url({{ $banner->image }});">
     {{--    <nav class="navbar navbar-expand-lg navbar-light fixed-top">--}}
     {{--        <div class="container col-12 justify-content-center">--}}
     {{--            <a class="logo col-6 ms-auto"><img class="logo" src="{{ asset('images/logo.png') }}"></a>--}}
@@ -80,7 +80,7 @@
 </div>
 
 <div class="block1">
-    <img class="banner1" src="{{ asset('images/Group 41.png') }}" alt="anh nen">
+    <img class="banner1" src="{{ $banner->image }}" alt="anh nen">
     <div>
         <ul class="header clearfix fixed-top navbar">
             <div class="column menu">
