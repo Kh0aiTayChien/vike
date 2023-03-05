@@ -3,6 +3,12 @@
 /public/uploads
 /public/js
 /storage/*.key
+/vendor/firebase
+/vendor/google
+/vendor/paragonie
+/vendor/phpseclib
+/vendor/pulkitjalan
+/vendor/revolution
 .env
 .env.backup
 .phpunit.result.cache
