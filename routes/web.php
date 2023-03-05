@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 //    return view('index');
 //})->where('uri', '(.*)');
 Route::get('/',[\App\Http\Controllers\SliderController::class,'show']);
+Route::post('/send',[App\Http\Controllers\SliderController::class,'send'])->name('send');
 Route::get('/news/{slug}',[App\Http\Controllers\ArticleController::class,'index'])->name('article');
+
