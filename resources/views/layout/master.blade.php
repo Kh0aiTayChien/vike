@@ -26,15 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="jquery.min.js"></script>
     <script src="jquery.hover3d.min.js"></script>
-{{--    <link--}}
-{{--            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"--}}
-{{--            rel="stylesheet"--}}
-{{--    />--}}
-{{--    <!-- MDB -->--}}
-{{--    <script--}}
-{{--            type="text/javascript"--}}
-{{--            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"--}}
-{{--    ></script>--}}
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 @include('layout.header')
