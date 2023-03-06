@@ -20,10 +20,10 @@
     width: 100%;
 }
 
-.logo2_mob {
-    width: 280%;
-    padding-left: 10%;
-}
+/*.logo2_mob {*/
+/*    width: 280%;*/
+/*    padding-left: 10%;*/
+/*}ko xoa*/
 
 .item {
     text-align: center;
@@ -48,8 +48,12 @@ li {
 
 .anh_to_mob{
     position: relative;
-    padding-top: 3%;
+    padding-top: 30%;
     text-align: center;
+}
+
+div.anh_to_mob h1 {
+    font-size: 3em;
 }
 
 .chunen_vang {
@@ -77,11 +81,13 @@ li {
 .themlink {
     position: relative;
     text-align: center;
+    float: left;
 }
 
 .buildingblock {
     text-align: center;
     padding-top: 3%;
+    padding-bottom: 7%;
 }
 
 .block2_mob {
@@ -109,6 +115,48 @@ li {
     padding-bottom: 3%;
     padding-top: 3%;
 }
+
+
+
+.toggle_menu {
+    float: right;
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+}
+
+nav {
+    /*height: 0px;*/
+}
+
+.logo1_mob {
+    width: 60vw;
+    margin: 10px;
+
+}
+
+.home_mob {
+    width: 12vw;
+
+}
+
+.logo2_mob {
+   width: 30vw;
+}
+
+
+nav ul {
+    /*float: right;*/
+    text-align: left;
+    margin-left: -10px;
+}
+
+
+nav ul.hidden {
+    display: none;
+}
+
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -146,9 +194,9 @@ li {
     width: 200%;
 }
 
-.home_mob {
-    width: 120%;
-}
+/*.home_mob {*/
+/*    width: 120%;*/
+/*}ko xoa*/
 
 .menu2_mob {
     width: 200%;
@@ -294,10 +342,10 @@ li {
     border: none;
 }
 
-.logo1_mob {
-    width: 100%;
-    margin-left: -30%;
-}
+/*.logo1_mob {*/
+/*    width: 100%;*/
+/*    margin-left: -30%;*/
+/*}ko xoa*/
 
 #btn-back-to-top {
     position: fixed;
@@ -390,6 +438,9 @@ li {
     div.block2_mob {
         display: none;
     }
+    .header_mob {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 749px) {
@@ -448,6 +499,10 @@ li {
     padding-top: 7%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header_mob {
+    position: absolute;
 }
 
 .header {

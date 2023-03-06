@@ -3,6 +3,9 @@
 {{--    <img class="mid_content" src="{{asset('images/Group 50.png')}}">--}}
 {{--</div>--}}
 <div class="block2_mob">
+    <div class="buildingblock">
+        <img class="text_anh_mob ani_bounceIn col-9" src="{{asset('images/textanh.png')}}">
+    </div>
     <div class="text_content2 justify-content-center">
         <p class="col-7 text-center ani_bounceIn aniUtil_dramatic">Everything you need to integrate blockchain technology in your apps, games and services.</p>
     </div>

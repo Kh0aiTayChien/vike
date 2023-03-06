@@ -1,22 +1,4 @@
 <div class="block1_mob justify-content-center" style="background-image: url({{ $banner->image }});">
-    {{--    <nav class="navbar navbar-expand-lg navbar-light fixed-top">--}}
-    {{--        <div class="container col-12 justify-content-center">--}}
-    {{--            <a class="logo col-6 ms-auto"><img class="logo" src="{{ asset('images/logo.png') }}"></a>--}}
-    {{--            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">--}}
-    {{--                <img src="{{asset('images/card-list.svg')}}">--}}
-    {{--            </button>--}}
-    {{--            <div class="collapse" id="navbarSupportedContent">--}}
-    {{--                <ul class="justify-content-center">--}}
-    {{--                    <li class="item text-center">--}}
-    {{--                        <a class="active" aria-current="page" href="#">Home</a>--}}
-    {{--                    </li>--}}
-    {{--                    <li class="item">--}}
-    {{--                        <a class="link" href="#"><img class="logo2_mob col-5" src="{{asset('images/logo1.png') }}"></a>--}}
-    {{--                    </li>--}}
-    {{--                </ul>--}}
-    {{--            </div>--}}
-    {{--        </div>--}}
-    {{--    </nav>--}}
         <img id="btn-back-to-top" class="btn_up_top" src="{{asset('images/arrowup.png')}}">
 
     <script>
@@ -46,23 +28,12 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-    <ul class="header clearfix navbar">
-        <div class="column menu">
-            <li class="animate__animated animate__backInLeft"><button class="mybtn logo1" onclick="topFunction()" id="myBtn" title="Go to top"><img class="logo1_mob" src="{{ asset('images/logo.png') }}"></button></li>
-
-        </div>
-        <div class="column content_mob animate__animated animate__backInRight">
-            <li class="menu2_mob"><a href="#Home"><img class="home_mob" src="{{asset('images/Home.png') }}"></a></li>
-            <li class="menu3_mob"><a href="#logo1"><img class="logo2_mob" src="{{asset('images/logo1.png') }}"></a></li>
-        </div>
-    </ul>
 
     <div class="anh_to_mob">
         <h1 class="chunen_trang">PLATFORM FOR</h1>
         <h1 class="chunen_vang">WORLDWIDE</h1>
         <h1 class="chunen_vang">BLOCKCHAIN</h1>
         <h1 class="chunen_trang">GAME</h1>
-{{--        <img class="animate__animated animate__bounceIn col-10" src="{{ asset('images/text_content.png') }}">--}}
     </div>
     <div class="text_content">
         <p class="col-9 text-center">The free global platform to play hundreds of P2E games - connecting gamers,
@@ -70,13 +41,9 @@
     </div>
     <div class="themlink">
         <a href="https://google.com"><img class="join anh_nho_mob col-5" src="{{asset('images/bình thường1.png' )}}"></a>
-    </div>
-    <div class="themlink">
         <a href="https://fb.com"><img class="invest anh_nho_mob col-5" src="{{asset('images/Group 40.png')}}"></a>
     </div>
-    <div class="buildingblock">
-        <img class="text_anh_mob ani_bounceIn col-9" src="{{asset('images/textanh.png')}}">
-    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </div>
 
 <div class="block1">
