@@ -1,5 +1,5 @@
 <div class="block3" style="">
-    <img class="bot_content ani_slideInLeft" src="{{asset('images/rm373batch16-55 1 (1).png')}}">
+    <img class="bot_content" src="{{asset('images/rm373batch16-55 1 (1).png')}}">
 
     <img class="text_anh1 ani_slideInLeft" src="{{asset('images/Group 52.png')}}">
 

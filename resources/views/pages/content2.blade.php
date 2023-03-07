@@ -3,7 +3,7 @@
 {{--    <img class="mid_content" src="{{asset('images/Group 50.png')}}">--}}
 {{--</div>--}}
 <div class="block2_mob">
-    <div class="buildingblock">
+    <div class="buildingblock" id="section1">
         <img class="text_anh_mob ani_bounceIn col-9" src="{{asset('images/textanh.png')}}">
     </div>
     <div class="text_content2 justify-content-center">
@@ -18,7 +18,7 @@
     <div class="icon justify-content-center">
         <img class="col-10 ani_fadeInLeft aniUtil_dramatic" src="{{asset('images/Group 491.png')}}">
     </div>
-    <div class="text_content3 justify-content-center">
+    <div class="text_content3 justify-content-center" id="section2">
         <img class="col-9 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/BACKED BY THE TOP VENTURES.png')}}">
     </div>
     <div class="icon justify-content-center">
@@ -30,7 +30,7 @@
     <div class="icon justify-content-center">
         <img class="col-10 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/Group 47.png')}}">
     </div>
-    <div class="text_content3 justify-content-center">
+    <div class="text_content3 justify-content-center" id="section3">
         <img class="col-6 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/DEVELOP FASTER.png')}}">
     </div>
     <div class="icon justify-content-center">
@@ -46,3 +46,5 @@
         <img class="col-10 ani_fadeInLeft aniUtil_dramatic" src="{{asset('images/Group 61.png')}}">
     </div>
 </div>
+
+

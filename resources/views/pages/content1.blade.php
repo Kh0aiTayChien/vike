@@ -85,6 +85,7 @@
             <a href="https://google.com" class="btn"><img class="join anh_nho" src="{{asset('images/bình thường1.png' )}}"></a>
             <a href="https://fb.com" class="btn"><img class="invest anh_nho1" src="{{asset('images/Group 40.png')}}"></a>
         </div>
+
         <img class="text_anh ani_bounceIn" src="{{asset('images/textanh.png')}}">
         <img class="text_anh2 ani_bounceIn" src="{{asset('images/text.png')}}">
         <div class="chinh_anh">
