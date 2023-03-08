@@ -27,6 +27,7 @@
     <script src="jquery.min.js"></script>
     <script src="jquery.hover3d.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 @include('layout.header')
