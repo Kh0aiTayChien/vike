@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[\App\Http\Controllers\SliderController::class,'show']);
 Route::post('/send',[App\Http\Controllers\SliderController::class,'send'])->name('send');
 Route::get('/news/{slug}',[App\Http\Controllers\ArticleController::class,'index'])->name('article');
-
+Route::get('/news',[App\Http\Controllers\ArticleController::class,'list'])->name('articles');

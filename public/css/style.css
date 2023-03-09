@@ -12,13 +12,8 @@
     url('../fonts/pilotcommand.ttf');
 }
 body{
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
     overflow-y: scroll;
-}
-
-body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    overflow-x: hidden;
 }
 
 .block1_mob {
@@ -134,10 +129,6 @@ div.anh_to_mob h1 {
     margin: 20px;
 }
 
-nav {
-    /*height: 0px;*/
-}
-
 .logo1_mob {
     width: 60vw;
     margin: 10px;
@@ -152,7 +143,6 @@ nav {
 .logo2_mob {
    width: 30vw;
 }
-
 
 
 nav ul {
@@ -456,7 +446,6 @@ nav ul.hidden {
 }
 
 .header_mob {
-    background:;
     opacity: 95%;
     height: 8%;
     transition: background-color 0.5s ease;
@@ -617,19 +606,20 @@ nav ul.hidden {
     background-color: #1D1D1D;
     border-top: 1px solid #ffc107 !important; /* viền trên màu vàng của thẻ card */
     border-bottom: 1px solid #ffc107 !important;
-    width: 10rem; height: 55rem;
+    width: 25rem; height: 55rem;
 }
 .card-img-top{
-    height: 25rem;
-    width: 100%;
+    height: 23rem;
+    width: auto;
 }
+
 @media screen and (max-width: 1280px) {
     .card {
-        width: 18rem ;
+        width: 20rem ;
         height: 48rem;
     }
     .card-img-top{
-        height: 20rem;
+        width: 100% !important;
     }
 }
 @media screen and (max-width: 1100px) {
@@ -642,8 +632,9 @@ nav ul.hidden {
         height:2rem !important;
     }
     .card-img-top{
-        height: 16rem;
-        padding: 2rem 2rem 2rem 2rem !important;
+        width: 100%;
+        height: 60%;
+        /*padding: 2rem 2rem 2rem 2rem !important;*/
     }
 }
 @media screen and (max-width: 991px) {
@@ -729,6 +720,11 @@ nav ul.hidden {
         -webkit-box-orient: vertical;
         margin-top: 0 !important;
     }
+    .card-img-top{
+        width: 100%;
+        height: 50%;
+        /*padding: 2rem 2rem 2rem 2rem !important;*/
+    }
 }
 
 .card-title{
@@ -789,6 +785,28 @@ ul.slick-dots{
     color: black;
     padding: 5px 20px;
     margin-top: 5px;
+}
+
+.card-list {
+    width: 75%;
+    background-color: #14203b;
+
+}
+.alert {
+    /*display: none;*/
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 20%;
+    background-color: #03e9f4;
+    opacity: 85%;
+    color: white;
+    z-index: 289;
+}
+.fa {
+    margin-right: 5em;
 }
 /*.slick-prev{*/
 /*float: right;*/
