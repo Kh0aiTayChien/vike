@@ -78,6 +78,6 @@ class BannerCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         CRUD::setValidation(BannerRequest::class);
-        CRUD::field('image')->type('image')->label('Lưu ý: tỉ lệ dài/rộng = 1/1, file tối đa 2mb')->crop(true)->aspect_ratio(1);
+        CRUD::field('image')->type('image')->label('Lưu ý: tỉ lệ rộng/cao = 1.7391304, file tối đa 2mb')->crop(true)->aspect_ratio(1.7391304);
     }
 }
