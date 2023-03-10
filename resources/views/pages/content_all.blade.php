@@ -18,7 +18,14 @@
     nav ul li a {
 
     }
-</style>
+    .page-item.active > .page-link{
+        background-color: goldenrod !important;
+    }
+    .page-link{
+        background-color: #0b4d75 !important;
+        color: white !important;
+    }
+</style>dark
 <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: #14203b; opacity: 0.8">
     <div class="container-fluid">
         <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -38,31 +45,9 @@
 
 </div>
 <div class="" style="margin: 5rem 15vw 0 15vw ">
-
-    <div class="row gx-5 gy-5 pb-5">
-        @foreach( $articles as $article)
-            <div class="col-lg-4 col-md-6">
-             <div class="card-list" style="width: 100%">
-                @unless(empty($article->image))
-                    <img src="{{$article->image}}" class="card-img-top p-5"  style=" height: 90%; width: 100%" alt="">
-                @else
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
-                         class="card-img-top " style="" alt="">
-                @endif
-                <div class="card-body ps-5 pe-5">
-                    <h5 class="card-title" style="font-size: 15px; line-height: 30px; height:2rem;">{{ $article->title}}</h5>
-                    <p class="card-text text-white"
-                       style="font-size: 20px; height:4rem; line-height: 20px;">{!! Str::limit(strip_tags($article->content)) !!}</p>
-                    <a href="{{ route('article',['slug' => $article->slug]) }}" class="button-more">more</a>
-                </div>
-            </div>
-            </div>
-        @endforeach
-    </div>
-    {{-- Pagination --}}
-    <div class="d-flex justify-content-center">
-        {!! $articles->links() !!}
-    </div>
+    <section class="articles">
+        @include('pages.content_page')
+    </section>
 </div>
 <!-- Footer -->
 <footer class="text-center text-lg-start text-muted" style="background-color: #14203b">
@@ -190,5 +175,28 @@
     window.addEventListener('scroll', function() {
         var header = document.querySelector('.header_mob');
         header.style.backgroundColor = (window.pageYOffset > 0) ? 'transparent' : 'transparent';
+    });
+    $(function() {
+        $('body').on('click', '.pagination a', function(e) {
+            e.preventDefault();
+            $('#load a').css('color', '#dfecf6');
+            // $('#load').append('<img style="position: absolute; left: 0; top: 0; z-index: 100000;" src="/images/loading.gif" />');
+
+            var url = $(this).attr('href');
+            console.log(url);
+            getArticles(url);
+            window.history.pushState("", "", url);
+        });
+
+        function getArticles(url) {
+            $.ajax({
+                url : url
+            }).done(function (data) {
+                $('.articles').html(data);
+                console.log(data);
+            }).fail(function () {
+                alert('Articles could not be loaded.');
+            });
+        }
     });
 </script>

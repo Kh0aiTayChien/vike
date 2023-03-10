@@ -609,8 +609,8 @@ nav ul.hidden {
     width: 25rem; height: 55rem;
 }
 .card-img-top{
-    height: 23rem;
-    width: auto;
+    /*height: 26vh;*/
+    /*width: auto;*/
 }
 
 @media screen and (max-width: 1280px) {

@@ -12,8 +12,11 @@ class ArticleController extends Controller
         $article = Article::where('slug',$slug)->firstOrFail();
         return view('pages/new',compact('article'));
     }
-    public function list(){
-        $articles = Article::where('category_id', 1)->paginate(6);
+    public function list(Request $request){
+        $articles = Article::where('category_id', 1)->paginate(3);
+        if ($request->ajax()) {
+            return view('pages.content_page', ['articles' => $articles])->render();
+        }
         return view('pages/list',compact('articles'));
     }
 }
