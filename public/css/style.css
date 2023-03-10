@@ -183,9 +183,8 @@ nav ul.hidden {
 .col-12 {width: 100%;}
 
 .block1 {
-    padding-bottom: 1%;
-    background: black;
-    height: 100%;
+
+    height: 100vh;
 }
 
 .banner1 {
@@ -226,6 +225,7 @@ nav ul.hidden {
 
 .anh_to {
     width: 85%;
+    height: 65vh;
     position: relative;
     padding-top: 15%;
     margin-left: 8%;
@@ -253,76 +253,6 @@ nav ul.hidden {
     /*position: relative;*/
     /*padding-top: 20%;*/
     margin-right: 65%;
-}
-
-.text_anh {
-    position: relative;
-    width: 50%;
-    display: block;
-    padding-top: 6%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3%;
-}
-
-.rectangle {
-    position: absolute;
-    width: 95%;
-    padding-left: 5% ;
-    padding-top:  5%;
-}
-
-.icon1 {
-    position: relative;
-    width: 90%;
-    padding-top: 10%;
-    padding-left: 10%;
-}
-
-.icon2 {
-    position: relative;
-    width: 80%;
-    padding-top: 5%;
-    padding-left: 20%;
-}
-
-
-.name_banner_icon3 {
-    position: relative;
-    width: 80%;
-    padding-top: 10%;
-    padding-left: 22%;
-}
-
-.banner_icon3 {
-    position: relative;
-    width: 90%;
-    padding-top: 8%;
-    padding-left: 12%;
-    padding-right: 2%;
-}
-
-.banner_icon4 {
-    position: relative;
-    width: 90%;
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-right: 5%;
-}
-
-.banner_icon5 {
-    position: relative;
-    width: 90%;
-    padding-top: 3%;
-    padding-left: 12%;
-    padding-right: 2%;
-}
-
-.text_anh2 {
-    width: 80%;
-    padding-top: 3%;
-    padding-left: 25%;
-    padding-right: 5%;
 }
 
 .header {
@@ -406,35 +336,17 @@ nav ul.hidden {
     width: 100%;
 
 }
-.text_anh1 {
-    position: relative;
-    padding-top: 7%;
-    width: 100%;
-    padding-left: 2%;
-}
+
 
 .img_content {
     width: 90%;
     position: relative;
 }
 
-.banner_name {
-    width: 90%;
-    padding-top: 8%;
-    padding-left: 18%;
-}
 
-.banner_icon6 {
-    width: 95%;
-    padding-top: 5%;
-    padding-left: 8%;
-}
 
-.banner_icon7 {
-    width: 95%;
-    padding-top: 3%;
-    padding-left: 8%;
-}
+
+
 
 #btn-back-to-top {
     position: fixed;
@@ -446,6 +358,7 @@ nav ul.hidden {
 }
 
 .header_mob {
+
     opacity: 95%;
     height: 8%;
     transition: background-color 0.5s ease;
@@ -461,6 +374,9 @@ nav ul.hidden {
     .header_mob {
         display: none;
     }
+    .hotline-phone-ring-wrap {
+        right: 130px;
+    }
 }
 
 @media screen and (max-width: 749px) {
@@ -473,6 +389,12 @@ nav ul.hidden {
     div.block1_mob {
         width: 100vw;
         height: 100vh;
+    }
+    .hotline-phone-ring-wrap {
+        right: -30px;
+    }
+    .hotline-phone-ring-circle {
+        display: none;
     }
 }
 
@@ -557,19 +479,100 @@ nav ul.hidden {
 }
 
 .block2 {
-    /*position: fixed;*/
-    margin-top: 1%;
     background: black;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 
-.mid_content {
-    width: 90%;
-    position: relative;
-    height: 120%;
+.text_head_block2 {
+    display: flex;
     padding-bottom: 1%;
+    padding-top: 5%;
 }
+
+.text_head1_block2 {
+    display: flex;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+.text_anh {
+    width: 60%;
+}
+
+.chinh_anh {
+    display: flex;
+}
+
+.rectangle {
+    position: absolute;
+    width: 80%;
+}
+
+.icon_mini_block2 {
+    position: relative;
+    display: flex;
+}
+
+.icon_mini1_block2 {
+    display: flex;
+}
+
+.icon1 {
+    width: 70%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.icon2 {
+    width: 55%;
+}
+
+.name_banner_icon3_block2 {
+    display: flex;
+    padding-top: 15%;
+}
+
+.name_banner_icon3{
+    width: 70%;
+}
+
+.banner_icon3_block2 {
+    display: flex;
+    padding-top: 4%;
+}
+
+.banner_icon3 {
+    width: 70%;
+}
+
+.banner_name_block2 {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+.banner_name {
+    width: 70%;
+
+}
+
+.banner_icon6_block2 {
+    display: flex;
+    padding-bottom: 3%;
+}
+
+.banner_icon6 {
+    width: 80%;
+    padding-bottom: 3%;
+}
+
+/*.mid_content {*/
+/*    width: 90%;*/
+/*    position: relative;*/
+/*    height: 120%;*/
+/*    padding-bottom: 1%;*/
+/*}*/
 
 .block3 {
     display: flex;
@@ -837,3 +840,178 @@ ul.slick-dots{
 /*.menu3 {*/
 /*    padding-left: 5%;*/
 /*}*/
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+}
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+.hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #e60808;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230, 8, 8, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+    width: 20px;
+    height: 20px;
+}
+.hotline-bar {
+    position: absolute;
+    background: rgba(230, 8, 8, 0.75);
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+    /* width: 175px !important; */
+    left: 33px;
+    bottom: 37px;
+}
+.hotline-bar > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 50px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+    color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+    30% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        -webkit-opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+@media (max-width: 768px) {
+    .hotline-bar {
+        display: none;
+    }
+}

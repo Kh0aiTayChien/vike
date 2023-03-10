@@ -86,23 +86,11 @@
             <a href="https://fb.com" class="btn"><img class="invest anh_nho1" src="{{asset('images/Group 40.png')}}"></a>
         </div>
 
-        <img class="text_anh ani_bounceIn" src="{{asset('images/textanh.png')}}">
-        <img class="text_anh2 ani_bounceIn" src="{{asset('images/text.png')}}">
-        <div class="chinh_anh">
-            <img class="rectangle" src="{{asset('images/Rectangle 6.png')}}">
-            <div>
-                <img class="icon1 ani_fadeInLeft aniUtil_dramatic" src="{{asset('images/Group 48.png')}}">
-            </div>
-        </div>
-        <img class="icon2 ani_fadeInRight aniUtil_dramatic" src="{{asset('images/Group 491.png')}}">
-        <img class="name_banner_icon3 ani_zoomIn aniUtil_dramatic" src="{{asset('images/BACKED BY THE TOP VENTURES.png')}}">
-        <img class="banner_icon3 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/Group 45.png')}}">
-        <img class="banner_icon4 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/Group 46.png')}}">
-        <img class="banner_icon5 ani_bounceInDown aniUtil_dramatic" src="{{asset('images/Group 47.png')}}">
-        <img class="banner_name ani_bounceInDown aniUtil_dramatic" src="{{asset('images/Group 42.png')}}">
-        <img class="banner_icon6 ani_fadeInLeft aniUtil_dramatic" src="{{asset('images/Group 43.png')}}">
-        <img class="banner_icon7 ani_fadeInRight aniUtil_dramatic" src="{{asset('images/Group 441.png')}}">
+
     </div>
 </div>
+
+
+
 
 
